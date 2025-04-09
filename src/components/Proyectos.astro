@@ -4,7 +4,7 @@ import Css from "../icons/Tecnologias/Lenguajes/Css.astro";
 import Js from "../icons/Tecnologias/Lenguajes/Js.astro";
 import React from "../icons/Tecnologias/Frameworks_Librerias/React.astro";
 import Python from "../icons/Tecnologias/Lenguajes/Python.astro";
-
+import Flask from "../icons/Tecnologias/Frameworks_Librerias/Flask.astro";
 import Social_icons from "./Social_icons.astro";
 import Github from "../icons/Social/Github.astro";
 import Link from "../icons/Social/Link.astro";
@@ -37,6 +37,12 @@ const TAGS = {
     icon: Python,
   },
 
+  Flask: {
+    name: "Flask",
+    class: "bg-[#000000] text-white", // o el color que prefieras
+    icon: Flask,
+  },
+
 };
 
 const PROJECTS = [
@@ -48,12 +54,10 @@ const PROJECTS = [
     tags: [TAGS.Python],
   },
   {
-    title: "Aplicacion del Clima",
-    description: "Pagina creada con el objetivo de usar API del clima y probar su funcionamiento. Se utilizo Html, Css y JS",
-    link: "#",
-    github: "https://github.com/Pietro923/api-del-clima",
+    title: "Página de Stock de Ropa",
+    description: "Pagina creada con el objetivo de visualizar el stock de ropa de una tienda con la funcionalidad de ser CRUD. Se utilizo Html, Css, Python y Flask",
     image: "/projects/proyecto2.webp",
-    tags: [TAGS.Html, TAGS.Css, TAGS.Js],
+    tags: [TAGS.Html, TAGS.Css, TAGS.Python, TAGS.Flask],
   },
 ];
 ---
